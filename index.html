@@ -1,30 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>bearBargains</title>
-  <link rel="stylesheet" href="style.css">
+  <title>BearBargain</title>
+  <link rel="stylesheet" type="text/css" href="styles/site.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <header>
-    <nav>
-      <h1> bearBargains </h1>
-      <ul>
-        <li><a href="Create Listing">Create Listing</a></li>
-        <li><a href="Saved">Saved</a></li>
-        <li><a href="Account">Account</a></li>
-      </ul>
+    <!-- Source: (original work) Alexander Lawless  -->
+    <div class="searchbar">
+      <h1>BearBargain</h1>
+      <input type="text" placeholder="Search..">
+      <button>🔍</button>
+    </div>
+    <nav class="navbar">
+      <button class="category">Furtniture</button>
+      <button class="category">Appliances</button>
+      <button class="category">Clothes</button>
+      <button class="category">Technology</button>
+      <button class="category">School Supplies</button>
+      <button class="category">Other</button>
+    </nav>
     </nav>
   </header>
-  <div class="row">
-    <div class="col">col1</div>
-    <div class="col">col2</div>
-    <div class="col">col3</div>
+
+  <div class="listings">
+    <div class="listing_card" style="max-width: 800px;">
+      <div class="card-image">
+        <img src="fridge.jpg" class="card-img" alt="listing 1" width="250" height="250">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Listing 1</h5>
+        <p class="card-text">This is a listing's description,probably including
+          location and price.</p>
+        <p class="card-text"><small class="text-muted">Posted 1 day ago</small></p>
+      </div>
+    </div>
+    <div class="listing_card" style="max-width: 400px;">
+      <div class="card-image">
+        <img src="chair.jpg" class="card-img" alt="listing 2" width="250" height="250">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Listing 2</h5>
+        <p class="card-text">This is a listing's description, probably including
+          location and price.</p>
+        <p class="card-text"><small class="text-muted">Posted 2 days ago</small></p>
+      </div>
+    </div>
   </div>
+
+
+  <div class="" <footer>
+    <div class="footer">
+      <p> Footer text goes here
+      <p>
+        <a class="join-link" href="mailto:emailaddress@.gmail.com">Join!</a>
+    </div>
+    </footer>
+
+    <script src="scripts/jquery-3.6.0.js" type="text/javascript"></script>
+    <script src="scripts/slideshow.js" type="text/javascript"></script>
+    <script src="scripts/lightbox.js" type="text/javascript"></script>
+    <script src="scripts/accordion.js" type="text/javascript"></script>
 </body>
 
 </html>
